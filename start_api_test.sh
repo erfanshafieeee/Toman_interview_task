@@ -1,0 +1,1 @@
+pytest --html=Api_test_report/api_test_report.html --self-contained-html api_test.py
