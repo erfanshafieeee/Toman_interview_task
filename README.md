@@ -306,7 +306,7 @@ pytest --html=reports/test_report.html --self-contained-html
 Or
 
 ```bash
-bash ./start.sh
+bash ./start_api_test.sh
 ```
 
 This will run all tests and create a complete HTML report in the `Api_test_report` directory.
