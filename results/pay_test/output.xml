@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.4 on win32)" generated="2025-09-16T00:17:32.994107" rpa="false" schemaversion="5">
+<suite id="s1" name="Pay Test" source="C:\Users\My_PC\Desktop\toman_task\Toman_interview_task\tests\pay_test.robot">
+<test id="s1-t1" name="Successful pay product" line="15">
+<kw name="Open Digikala Login Page" owner="pay_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:33.257382" level="INFO">Opening browser 'Chrome' to base url 'https://www.digikala.com/users/login/'.</msg>
+<arg>https://www.digikala.com/users/login/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-16T00:17:33.257382" elapsed="3.354090"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-16T00:17:36.612472" elapsed="6.778295"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:input[name="username"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-16T00:17:43.391770" elapsed="0.018993"/>
+</kw>
+<status status="PASS" start="2025-09-16T00:17:33.256379" elapsed="10.154899"/>
+</kw>
+<kw name="Login With Mobile And Password" owner="pay_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:43.414286" level="INFO">Typing text '09908917206' into text field 'css:input[name="username"]'.</msg>
+<arg>css:input[name="username"]</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:17:43.413331" elapsed="0.176641"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:43.591979" level="INFO">Clicking element 'xpath=/html/body/div/main/div[2]/div[2]/form/button'.</msg>
+<arg>xpath=/html/body/div/main/div[2]/div[2]/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:17:43.589972" elapsed="0.180312"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div/main/div[2]/div[2]/button[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-16T00:17:43.770795" elapsed="0.488716"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:44.260524" level="INFO">Clicking element 'xpath=/html/body/div/main/div[2]/div[2]/button[1]'.</msg>
+<arg>xpath=/html/body/div/main/div[2]/div[2]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:17:44.259511" elapsed="0.138057"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:input[name="password"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-16T00:17:44.397568" elapsed="0.017461"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:44.416031" level="INFO">Typing text 'Erf@n5183' into text field 'css:input[name="password"]'.</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:17:44.415029" elapsed="0.148926"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:44.564964" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<arg>css:button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:17:44.564964" elapsed="0.141131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:17:49.707510" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:17:44.706095" elapsed="5.001926"/>
+</kw>
+<arg>${VALID_MOBILE}</arg>
+<arg>${CORRECT_PASSWORD}</arg>
+<status status="PASS" start="2025-09-16T00:17:43.412285" elapsed="6.295736"/>
+</kw>
+<kw name="Open sample product page" owner="pay_keywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:17:49.710033" level="INFO">Opening url 'https://www.digikala.com/product/dkp-20261601/گوشی-موبایل-اپل-مدل-iphone-16-ch-دو-سیم-کارت-ظرفیت-128-گیگابایت-و-رم-8-گیگابایت-اکتیو/'</msg>
+<arg>https://www.digikala.com/product/${product_id}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-16T00:17:49.710033" elapsed="14.901865"/>
+</kw>
+<arg>${PRODUCT_ID}</arg>
+<status status="PASS" start="2025-09-16T00:17:49.709037" elapsed="14.902861"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:18:14.614172" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:18:04.612902" elapsed="10.001777"/>
+</kw>
+<kw name="Add Product To Cart" owner="pay_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:18:14.620120" level="INFO">Clicking button 'xpath=//button[@data-cro-id='pdp-add-to-cart']'.</msg>
+<arg>xpath=//button[@data-cro-id='pdp-add-to-cart']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:18:14.619120" elapsed="0.137826"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:18:19.758629" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:18:14.756946" elapsed="5.001683"/>
+</kw>
+<status status="PASS" start="2025-09-16T00:18:14.618111" elapsed="5.140518"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:18:19.758629" level="INFO">Opening url 'https://www.digikala.com/checkout/cart/'</msg>
+<arg>https://www.digikala.com/checkout/cart/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-16T00:18:19.758629" elapsed="0.765722"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:18:30.526951" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:18:20.525348" elapsed="10.001603"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:18:30.528675" level="INFO">Clicking element 'xpath=//a[@data-cro-id='cart-continue-shopping']'.</msg>
+<arg>xpath=//a[@data-cro-id='cart-continue-shopping']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:18:30.528675" elapsed="0.124324"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:18:40.653277" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:18:30.652999" elapsed="10.001347"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:18:40.657370" level="INFO">Executing JavaScript:
+document.querySelector('[data-cro-id="shipping-deliver_today"]').click()
+Without any arguments.</msg>
+<arg>document.querySelector('[data-cro-id="shipping-deliver_today"]').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-16T00:18:40.656347" elapsed="0.028154"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-16T00:18:42.690449" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-16T00:18:40.685502" elapsed="2.004947"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-16T00:18:42.692448" level="INFO">Clicking button 'xpath=//button[@data-cro-id='shipping-continue']'.</msg>
+<arg>xpath=//button[@data-cro-id='shipping-continue']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-16T00:18:42.691445" elapsed="0.096383"/>
+</kw>
+<kw name="Close Browser" owner="pay_keywords">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-09-16T00:18:42.788865" elapsed="6.347748"/>
+</kw>
+<status status="PASS" start="2025-09-16T00:18:42.788865" elapsed="6.347748"/>
+</kw>
+<tag>Positive</tag>
+<status status="PASS" start="2025-09-16T00:17:33.254384" elapsed="75.883228"/>
+</test>
+<status status="PASS" start="2025-09-16T00:17:32.996183" elapsed="76.141429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Positive</stat>
+</tag>
+<suite>
+<stat name="Pay Test" id="s1" pass="1" fail="0" skip="0">Pay Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
