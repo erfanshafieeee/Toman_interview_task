@@ -1,6 +1,7 @@
 # Toman Interview Task
 
 # Testcases :
+- **[Testcases - Persian](./testcases_fa.pdf)**
 
 ## 🧪 Login Test Cases
 
