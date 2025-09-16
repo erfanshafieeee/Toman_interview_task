@@ -408,7 +408,7 @@ The high failure rate underscores the server's inability to manage the traffic e
 A comprehensive HTML report detailing the test results, including charts and statistics, is available in the `load_test_result` folder.
 ---
 
-# Hypothetical Bug Reports for Digikala Website
+# 🐞 Hypothetical Bug Reports for Digikala Website
 
 This repository contains hypothetical bug reports for the Digikala website. These reports aim to address issues that were identified on both the user interface (UI) and functional aspects of the website.
 
