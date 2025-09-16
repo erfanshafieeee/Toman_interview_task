@@ -364,6 +364,10 @@ To run the load test:
    ```bash
    pip install locust
    ```
+   OR
+   ```
+   pip install -r requirements.txt
+   ```
 
 2. **Execute the Test:**
 
