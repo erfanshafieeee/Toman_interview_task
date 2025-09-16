@@ -372,7 +372,7 @@ To run the load test:
 2. **Execute the Test:**
 
    ```bash
-   locust -f locustfile.py --headless --users 3000 --spawn-rate 10 --run-time 5m
+   locust -f load_test.py --users 3000 --spawn-rate 10 --run-time 5m
    ```
 
    This command initiates the test with 3,000 virtual users, a spawn rate of 10 users per second, and a duration of 5 minutes. The results are saved in `load_test_result`.
