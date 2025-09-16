@@ -190,7 +190,7 @@ Feature: User Login
     Then an error message "No account found with this mobile number" should be displayed
 ```
 ---
-# Digikala Login Test Automation 🚀
+# Digikala Login and Pay Test Automation 🚀
 
 This project includes automated tests for the Digikala login page using **Robot Framework** and **Selenium**. The test cases cover various login scenarios such as logging in with mobile and email, and a pay process for ordering products.
 
