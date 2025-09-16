@@ -6,7 +6,7 @@ class DigiKalaUser(HttpUser):
     @task
     def get_product(self):
         self.client.get(
-            "https://api.digikala.com/v2/product/17833952/?_rch=db340a7f7c4f",
+            "/v2/product/17833952/?_rch=db340a7f7c4f",
             headers={
                 'accept': 'application/json, text/plain, */*',
                 'accept-language': 'en-US,en;q=0.9,fa-IR;q=0.8,fa;q=0.7',
