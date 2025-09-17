@@ -262,7 +262,7 @@ Welcome to the **API Test Suite** for the **Digikala Cart API**! This repository
 ```bash
 ├── api_test.py           # Contains the test functions
 ├── requirements.txt      # List of dependencies
-├── reports/              # Folder for HTML reports
+├── Api_test_report              # Folder for HTML reports
 └── start.sh              # script for run test
 ```
 
